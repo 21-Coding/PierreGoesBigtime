@@ -1,7 +1,9 @@
-using Systems.Collections.Generic;
+using System.Collections.Generic;
+using System;
 
 
-namespace VendorTracker.Models 
+
+namespace VendorTracker.Models
 {
     public class Order
     {
@@ -19,18 +21,18 @@ namespace VendorTracker.Models
 
         public static List<Order> GetAll()
         {
-            return _instances; 
+            return _instances;
         }
 
         public static void ClearAll()
         {
-            return _instances.Clear();
+           _instances.Clear();
         }
 
         public static Order Find(int searchId)
         {
             return _instances[searchId - 1];
-            
+
         }
     }
 

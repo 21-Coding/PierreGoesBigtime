@@ -1,11 +1,11 @@
 using System.Collections.Generic;
-using System; 
+using System;
 using Microsoft.AspNetCore.Mvc;
 using VendorTracker.Models;
 
-namespace VendorTracker.Controllers 
+namespace VendorTracker.Controllers
 {
-    public class VendorController : Controller 
+    public class VendorController : Controller
     {
         [HttpGet("/vendors")]
         public ActionResult Index()
@@ -18,7 +18,7 @@ namespace VendorTracker.Controllers
         [HttpGet("/vendors/new")]
         public ActionResult New()
         {
-            return View(); 
+            return View();
         }
 
         [HttpPost("/vendors")]
@@ -36,7 +36,7 @@ namespace VendorTracker.Controllers
             Vendor chosenVendor = Vendor.Find(id);
             List<Order> VenOrders = chosenVendor.Orders;
             tionaries.Add("vendor", chosenVendor);
-            tionaries.Add("orders", typeOrders);
+            tionaries.Add("orders", VenOrders);
             return View(tionaries);
         }
     }

@@ -1,7 +1,7 @@
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 
-namespace VendorTracker
+namespace VendorTracker.Models
 {
   public class Program
   {
