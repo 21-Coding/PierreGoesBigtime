@@ -1,0 +1,16 @@
+@{
+Layout = "_Layout";
+
+}
+
+<h1>Fill out the form below to add to @Model.Name</h1>
+
+
+<form action="/vendors/@Model.Id/orders" method="post">
+  <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+  <input placeholder="Item Info"id="orderInfo" name="orderInfo" type="text">
+  <input placeholder="Preferred Date" id="orderDate" name="orderDate" type="date">
+  <input placeholder="Preferred Location"id="orderLocation" name="orderLocation" type="text">
+  <input placeholder="Preferred Payment"id="orderPayment" name="orderPayment" type="text">
+  <button type='submit'>Place Order</button>
+  </form>

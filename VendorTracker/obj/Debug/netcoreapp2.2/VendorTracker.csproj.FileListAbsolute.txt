@@ -23,3 +23,8 @@
 /Users/dominiqueyoumans/Desktop/PierreGoesBigtime/VendorTracker/obj/Debug/netcoreapp2.2/VendorTracker.dll
 /Users/dominiqueyoumans/Desktop/PierreGoesBigtime/VendorTracker/obj/Debug/netcoreapp2.2/VendorTracker.pdb
 /Users/dominiqueyoumans/Desktop/PierreGoesBigtime/VendorTracker/obj/Debug/netcoreapp2.2/VendorTracker.csproj.CopyComplete
+/Users/dominiqueyoumans/Desktop/PierreGoesBigtime/VendorTracker/obj/Debug/netcoreapp2.2/Razor/Views/Orders/New.g.cshtml.cs
+/Users/dominiqueyoumans/Desktop/PierreGoesBigtime/VendorTracker/obj/Debug/netcoreapp2.2/Razor/Views/Orders/Show.g.cshtml.cs
+/Users/dominiqueyoumans/Desktop/PierreGoesBigtime/VendorTracker/obj/Debug/netcoreapp2.2/Razor/Views/Vendors/Index.g.cshtml.cs
+/Users/dominiqueyoumans/Desktop/PierreGoesBigtime/VendorTracker/obj/Debug/netcoreapp2.2/Razor/Views/Vendors/New.g.cshtml.cs
+/Users/dominiqueyoumans/Desktop/PierreGoesBigtime/VendorTracker/obj/Debug/netcoreapp2.2/Razor/Views/Vendors/Show.g.cshtml.cs
