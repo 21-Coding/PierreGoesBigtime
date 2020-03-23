@@ -5,7 +5,7 @@ using VendorTracker.Models;
 
 namespace VendorTracker.Controllers
 {
-    public class VendorController : Controller
+    public class VendorsController : Controller
     {
         [HttpGet("/vendors")]
         public ActionResult Index()
@@ -41,11 +41,11 @@ namespace VendorTracker.Controllers
         }
 
         [HttpPost("/vendors/{vendorId}/orders")]
-        public ActionResult Create(int vendorId, string orderPayment, string orderDate, string orderLocation, string orderInfo)
+        public ActionResult Create(string orderInfo, int vendorId, string orderPayment, string orderDate, string orderLocation)
         {
           Dictionary<string, object> model = new Dictionary<string, object>();
           Vendor foundVendor = Vendor.Find(vendorId);
-          Order newOrder = new Order(orderPayment, orderDate, orderInfo, orderLocation);
+          Order newOrder = new Order(orderInfo, orderPayment, orderDate, orderLocation);
           foundVendor.Add(newOrder);
           List<Order> venOrders = foundVendor.Orders;
           model.Add("orders", venOrders);
